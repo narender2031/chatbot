@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/narender2031/bot_service.git
-  revision: e106d6a18e9d4c1442a406e7c07608bcdc591034
+  revision: 7109630a10fc1a7fb5a761079b95e20a71024873
   specs:
     stealth-sarah (0.9.5)
       graphql-client (= 0.13.0)
@@ -39,6 +39,8 @@ GEM
     connection_pool (2.2.2)
     crass (1.0.4)
     dotenv (0.7.0)
+    dotenv-rails (0.7.0)
+      dotenv (= 0.7.0)
     erubi (1.7.1)
     foreman (0.64.0)
       dotenv (~> 0.7.0)
@@ -107,6 +109,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dotenv-rails
   foreman
   pg
   stealth (~> 1.0)

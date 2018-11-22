@@ -29,6 +29,7 @@ default: &default
   #   from_phone: +14155330000
 
   sarah:
+    response_url: <%= ENV['RAILS_APP_RESPONSE_URL'] %>
     setup:
       greeting:
         - locale: default
