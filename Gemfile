@@ -8,7 +8,7 @@ gem 'sqlite3'
 
 # Uncomment to enable the Stealth Twilio SMS Driver
   # gem 'stealth-twilio'
-gem 'stealth-sarah', :path => '/Users/narender/projects/new_projects/stealth-sarah'
+# gem 'stealth-sarah', :path => '/Users/narender/projects/new_projects/stealth-sarah'
 
 group :development do
   gem 'foreman'
