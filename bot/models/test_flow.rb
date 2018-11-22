@@ -1,0 +1,2 @@
+class TestFlow < BotRecord
+end
