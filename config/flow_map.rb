@@ -22,7 +22,6 @@ class FlowMap
     state :ask_phone
     state :get_phone, fails_to: :ask_phone
     state :phone_error
-    state :say_buttons
   end
 
   flow :goodbye do
