@@ -9,7 +9,7 @@ gem 'pg'
 # Uncomment to enable the Stealth Twilio SMS Driver
   # gem 'stealth-twilio'
   gem 'stealth-sarah', :git => 'https://github.com/narender2031/bot_service.git'
-# gem 'stealth-sarah', :path => '/Users/narender/projects/new_projects/stealth-sarah'
+  # gem 'stealth-sarah', :path => '/Users/narender/projects/new_projects/stealth-sarah'
 
   gem 'dotenv-rails', groups: [:development, :test]
 
