@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 gem 'stealth', '~> 1.0'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
-
+# gem 'sqlite3'
+# gem 'pg'
 # Uncomment to enable the Stealth Facebook Driver
   # gem 'stealth-facebook'
 
