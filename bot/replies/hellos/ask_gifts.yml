@@ -1,0 +1,14 @@
+- reply_type: text
+  text: I'm feeling generous today. I have 3 gifts for you!.Pick one you'd like
+- reply_type: text
+  text: Pick one you'd like
+  buttons:
+    - type: payload
+      text: 'Amazon voucher'
+      payload: 'amazon_voucher'
+    - type: payload
+      text: 'Dinner coupon'
+      payload: 'dinner_coupon'
+    - type: payload
+      text: 'Secret sauce'
+      payload: 'secret_sauce'
