@@ -1,0 +1,9 @@
+- reply_type: text
+  text: Select Country?
+  select:
+    - type: payload
+      text: 'India'
+      payload: 'In'
+    - type: payload
+      text: 'Pakistan'
+      payload: 'PK'

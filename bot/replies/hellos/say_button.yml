@@ -1,0 +1,9 @@
+- reply_type: text
+  text: Where You want to go ?
+  buttons:
+    - type: payload
+      text: 'More Chat :)'
+      payload: 'more chat'
+    - type: payload
+      text: 'bie'
+      payload: 'Bye'

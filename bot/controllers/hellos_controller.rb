@@ -56,8 +56,8 @@ class HellosController < BotController
   def get_phone
     if current_message.message.length == 10
       send_replies
-      update_session_to flow: "goodbye", state: "say_goodbye"
-      step_to flow: "goodbye", state: "say_goodbye"
+      update_session_to state: "say_button"
+      step_to state: "say_button"
     else
       step_to state: 'phone_error'
     end
@@ -70,6 +70,18 @@ class HellosController < BotController
     step_to state: 'ask_phone'
   end
 
- 
+  def say_button
+    send_replies
+    
+  end
 
+
+  def ask_country
+    send_replies
+    update_session_to state: 'get_country'
+  end
+
+  def get_country
+    send_replies
+  end
 end
