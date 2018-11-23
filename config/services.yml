@@ -30,6 +30,7 @@ default: &default
 
   sarah:
     response_url: <%= ENV['RAILS_APP_RESPONSE_URL'] %>
+    use_ssl: <%= ENV['USE_SSL'] %>
     setup:
       greeting:
         - locale: default
