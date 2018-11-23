@@ -9,11 +9,11 @@ class BotController < Stealth::Controller
 
   def handle_payload(payload)
     case payload
-    when 'amazon_voucher'
+    when 'Amazon Voucher'
       step_to flow: 'gifts', state: 'amazon_voucher'
-    when 'dinner_coupon'
+    when 'Dinner Coupon'
       step_to flow: 'gifts', state: 'dinner_coupon'
-    when 'secret_sauce'
+    when 'Secret Sauce'
       step_to flow: 'gifts', state: 'secret_sauce'
       # when 'More Chat :)'
       #   update_session_to flow: 'hello', state: 'ask_country'

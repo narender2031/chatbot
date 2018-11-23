@@ -5,10 +5,10 @@
   buttons:
     - type: payload
       text: 'Amazon voucher'
-      payload: 'amazon_voucher'
+      payload: 'Amazon Voucher'
     - type: payload
       text: 'Dinner coupon'
-      payload: 'dinner_coupon'
+      payload: 'Dinner Coupon'
     - type: payload
       text: 'Secret sauce'
-      payload: 'secret_sauce'
+      payload: 'Secret Sauce'

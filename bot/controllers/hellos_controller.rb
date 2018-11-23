@@ -18,7 +18,7 @@ class HellosController < BotController
 
   def ask_gifts
     send_replies
-    update_session_to state: 'get_gifts'
+    # update_session_to state: 'get_gifts'
   end
 
 
