@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/narender2031/bot_service.git
-  revision: eced26d0e2323ea630a187985ec289131b20dbdd
+  revision: 86bd6cbe1440deea0d1c9b19f46d1498d38e0713
   specs:
     stealth-sarah (0.9.5)
       graphql-client (= 0.13.0)
