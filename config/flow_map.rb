@@ -26,9 +26,9 @@ class FlowMap
     state :say_invalid_email
     # state :ask_color
     # state :get_color, fails_to: :ask_color
-    # state :ask_phone
-    # state :get_phone, fails_to: :ask_phone
-    # state :phone_error
+    state :ask_phone
+    state :get_phone, fails_to: :ask_phone
+    state :phone_error
     # state :say_button
     # state :ask_country
     # state :get_country, fails_to: :ask_country

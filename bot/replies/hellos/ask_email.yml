@@ -1,2 +1,4 @@
-- reply_type: text
+- reply_type: email
   text: Please tell us your Email!
+
+   

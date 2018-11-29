@@ -18,7 +18,7 @@ class HellosController < BotController
 
   def ask_gifts
     send_replies
-    # update_session_to state: 'get_gifts'
+    update_session_to state: 'get_gifts'
   end
 
 
@@ -30,8 +30,8 @@ class HellosController < BotController
   def get_email
     if current_message.message.include?('@')
       send_replies
-      update_session_to flow: 'goodbye', state: 'say_goodbye'
-      step_to flow: 'goodbye', state: 'say_goodbye'
+      update_session_to state: "ask_phone"
+      step_to state: "ask_phone"
     else
       step_to state: 'say_invalid_email'
     end
@@ -42,6 +42,7 @@ class HellosController < BotController
     update_session_to state: 'ask_email'
     step_to state: 'ask_email'
   end
+
 
   # def ask_color
   #   send_replies
@@ -54,27 +55,27 @@ class HellosController < BotController
   # end
 
 
-  # def ask_phone
-  #   send_replies
-  #   update_session_to state: 'get_phone'
-  # end
+  def ask_phone
+    send_replies
+    update_session_to state: 'get_phone'
+  end
 
-  # def get_phone
-  #   if current_message.message.length == 10
-  #     send_replies
-  #     update_session_to state: "say_button"
-  #     step_to state: "say_button"
-  #   else
-  #     step_to state: 'phone_error'
-  #   end
-  # end
+  def get_phone
+    if current_message.message.length == 10
+      send_replies
+      update_session_to flow: 'goodbye', state: 'say_goodbye'
+      step_to flow: 'goodbye', state: 'say_goodbye'
+    else
+      step_to state: 'phone_error'
+    end
+  end
 
 
-  # def phone_error
-  #   send_replies
-  #   update_session_to state: 'ask_phone'
-  #   step_to state: 'ask_phone'
-  # end
+  def phone_error
+    send_replies
+    update_session_to state: 'ask_phone'
+    step_to state: 'ask_phone'
+  end
 
   # def say_button
   #   send_replies

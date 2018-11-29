@@ -1,5 +1,5 @@
 - reply_type: text
-  text: I'm feeling generous today. I have 3 gifts for you!.Pick one you'd like
+  text: I'm feeling generous today. I have 3 gifts for you!
 - reply_type: text
   text: Pick one you'd like
   buttons:

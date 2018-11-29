@@ -1,0 +1,2 @@
+module <%= name.capitalize.underscore.camelize %>Helper < BotHelper
+end
