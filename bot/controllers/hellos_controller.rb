@@ -18,7 +18,7 @@ class HellosController < BotController
 
   def ask_gifts
     send_replies
-    update_session_to state: 'get_gifts'
+    # update_session_to state: 'get_gifts'
   end
 
 
@@ -63,20 +63,23 @@ class HellosController < BotController
   def get_phone
     if current_message.message.length == 10
       send_replies
-      update_session_to flow: 'goodbye', state: 'say_goodbye'
-      step_to flow: 'goodbye', state: 'say_goodbye'
+      update_session_to state: 'ask_password'
+      step_to state: 'ask_password'
     else
       step_to state: 'phone_error'
     end
   end
 
-
+   
   def phone_error
     send_replies
     update_session_to state: 'ask_phone'
     step_to state: 'ask_phone'
   end
-
+  
+  def ask_password
+    send_replies
+  end
   # def say_button
   #   send_replies
 

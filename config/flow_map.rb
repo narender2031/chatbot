@@ -14,6 +14,11 @@ class FlowMap
     state :dinner_coupon
     state :secret_sauce
   end
+  
+  flow :passwords do
+    state :generate_password
+    state :enter_password
+  end
 
   flow :hello do
     state :say_hello
@@ -29,6 +34,7 @@ class FlowMap
     state :ask_phone
     state :get_phone, fails_to: :ask_phone
     state :phone_error
+    state :ask_password
     # state :say_button
     # state :ask_country
     # state :get_country, fails_to: :ask_country
