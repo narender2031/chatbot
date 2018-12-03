@@ -24,6 +24,11 @@ class FlowMap
     state :ask_email
     state :get_email, fails_to: :ask_email
     state :say_invalid_email
+    state :ask_for_registeration
+    state :get_interset,fails_to: :ask_for_registeration
+    state :not_interested, fails_to: :ask_for_registeration
+    state :ask_password
+    state :get_password, fails_to: :ask_password
     # state :ask_color
     # state :get_color, fails_to: :ask_color
     # state :ask_phone
@@ -35,7 +40,8 @@ class FlowMap
   end
 
   flow :goodbye do
-    state :say_goodbye
+    state :say_thanks
+    state :say_come_again
   end
 
   flow :catch_all do

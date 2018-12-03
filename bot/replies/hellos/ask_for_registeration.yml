@@ -1,0 +1,8 @@
+- reply_type: text
+  text: Would you like to create an account!
+  buttons:
+    - type: password
+      other_value: ''
+      text: 'Enter Password here'
+      payload: 'CreatePassword'
+      url: ''
