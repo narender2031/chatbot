@@ -1,0 +1,11 @@
+- reply_type: text
+  text: Thanks for information.
+- reply_type: text
+  text: Would you like to create an accoun with us. It will take few secounds!
+  buttons:
+  - type: postback
+    text: 'Yes, I would like to create account'
+    payload: 'ready_to_register'
+  - type: postback
+    text: 'No, Please Delete my conversation'
+    payload: 'No-Work'

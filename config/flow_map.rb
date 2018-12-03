@@ -17,31 +17,32 @@ class FlowMap
 
   flow :hello do
     state :say_hello
-    state :ask_name
-    state :get_name, fails_to: :ask_name
-    state :ask_gifts
-    state :get_gifts
-    state :ask_email
-    state :get_email, fails_to: :ask_email
-    state :say_invalid_email
-    state :ask_for_registeration
-    state :get_interset,fails_to: :ask_for_registeration
-    state :not_interested, fails_to: :ask_for_registeration
-    state :ask_password
-    state :get_password, fails_to: :ask_password
-    # state :ask_color
-    # state :get_color, fails_to: :ask_color
-    # state :ask_phone
-    # state :get_phone, fails_to: :ask_phone
-    # state :phone_error
-    # state :say_button
-    # state :ask_country
-    # state :get_country, fails_to: :ask_country
+  end
+
+  flow :basic_questions do
+    state :say_welcome
+    state :ask_work_status
+    state :not_eligibility
+    state :ask_annual_income
+    state :dependant
+    state :eligibile
   end
 
   flow :goodbye do
     state :say_thanks
     state :say_come_again
+  end
+
+  flow :register do 
+    state :say_thanks
+    state :ask_name
+    state :get_name, fails_to: :ask_name
+    state :ask_email
+    state :get_email, fails_to: :ask_email
+    state :ask_password
+    state :get_password, fails_to: :ask_password
+    state :ask_signup
+    state :say_welcome
   end
 
   flow :catch_all do

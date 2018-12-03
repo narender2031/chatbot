@@ -1,0 +1,13 @@
+- reply_type: text
+  text: How many dependant people on you?
+  buttons:
+    - type: postback
+      text: '0'
+      payload: 'complete_basic'
+    - type: postback
+      text: '1'
+      payload: 'complete_basic'
+    - type: postback
+      text: '< 2'
+      payload: 'complete_basic'
+    

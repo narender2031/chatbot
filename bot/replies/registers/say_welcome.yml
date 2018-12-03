@@ -1,0 +1,8 @@
+- reply_type: text
+  text: Thanks for Register with us.
+- reply_type: text
+  text: I hope enjoy this conversation! bye 🤩.
+  buttons:
+  - type: postback
+    text: 'say Bye'
+    payload: 'say_bie'

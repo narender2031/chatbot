@@ -1,2 +1,14 @@
 - reply_type: text
-  text: Hello Human :) What's your name?
+  text: Hello Human :) I Hope you are doing great.
+- reply_type: text
+  text: My name is Frank. ;)
+- reply_type: text 
+  text: I am goin g to ask some basic information from you to check eligibility for continue.
+  buttons:
+    - type: postback
+      text: 'Yes, to continue'
+      payload: 'Yes'
+    - type: postback
+      text: 'No, I want delete this conversation'
+      payload: 'Delete'
+      url: 'https://chatbot-rails-staging.herokuapp.com/delete_conversation'

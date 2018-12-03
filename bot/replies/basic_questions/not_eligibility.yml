@@ -1,0 +1,11 @@
+- reply_type: text
+  text: Sorry sir you are not eligible so please come when you have eligible.
+- reply_type: text
+  text: "Thanks! Have a nyc day"
+  buttons:
+  - type: postback
+    text: 'Delete My conversation'
+    payload: 'Delete'
+    url: 'https://chatbot-rails-staging.herokuapp.com/delete_conversation'
+    
+

@@ -1,0 +1,12 @@
+- reply_type: text
+  text: click to continue as user or you can cancle this registration.
+  buttons:
+  - type: postback
+    text: 'Sign Up'
+    payload: 'SignUp'
+    url: 'https://chatbot-rails-staging.herokuapp.com/update_session'
+  - type: postback
+    text: 'Cancel my Account! You will loose your all data'
+    payload: 'Delete'
+    url: 'https://chatbot-rails-staging.herokuapp.com/delete_conversation'
+    

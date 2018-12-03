@@ -1,0 +1,13 @@
+- reply_type: text
+  text: Select your annulincome
+  buttons:
+    - type: postback
+      text: '> ₹ 500000'
+      payload: 'No-Work'
+    - type: postback
+      text: '> ₹ 800000'
+      payload: 'Eligible'
+    - type: postback
+      text: '< ₹ 1000000'
+      payload: 'Eligible'
+    

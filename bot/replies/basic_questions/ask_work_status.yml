@@ -1,0 +1,13 @@
+- reply_type: text
+  text: Can you tell me what is your working status.
+  buttons:
+    - type: postback
+      text: 'Working'
+      payload: 'Working'
+    - type: postback
+      text: 'Self-employee'
+      payload: 'Working'
+    - type: postback
+      text: 'Looking for work'
+      payload: 'No-Work'
+    
