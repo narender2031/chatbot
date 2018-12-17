@@ -11,4 +11,4 @@
     - type: postback
       text: 'No, I want delete this conversation'
       payload: 'Delete'
-      url: 'https://chatbot-rails-staging.herokuapp.com/delete_conversation'
+      url: 'http://localhost:3000/delete_conversation'

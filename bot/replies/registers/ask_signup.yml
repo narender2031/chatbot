@@ -4,9 +4,9 @@
   - type: postback
     text: 'Sign Up'
     payload: 'SignUp'
-    url: 'https://chatbot-rails-staging.herokuapp.com/update_session'
+    url: 'http://localhost:3000/update_session'
   - type: postback
     text: 'Cancel my Account! You will loose your all data'
     payload: 'Delete'
-    url: 'https://chatbot-rails-staging.herokuapp.com/delete_conversation'
+    url: 'http://localhost:3000/delete_conversation'
     

@@ -45,6 +45,12 @@ class FlowMap
     state :say_welcome
   end
 
+  flow :document do 
+    state :say_hello
+    state :ask_pan_number
+    state :get_pan_number, fails_to: :ask_pan_number
+  end
+
   flow :catch_all do
     state :level1
   end

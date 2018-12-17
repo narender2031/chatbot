@@ -1,2 +1,2 @@
 - reply_type: text
-  text: "Nice to meet you <%= current_message.message %>!"
+  text: "Nice to meet you <%= current_message.message %> <% $redis.set('name',current_message.message )%>!"

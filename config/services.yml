@@ -28,7 +28,7 @@ default: &default
   #   auth_token: XXXTWILIO_AUTH_TOKENXXX
   #   from_phone: +14155330000
 
-  sarah:
+  bridge:
     response_url: <%= ENV['RAILS_APP_RESPONSE_URL'] %>
     use_ssl: <%= ENV['USE_SSL'] %>
     setup:
